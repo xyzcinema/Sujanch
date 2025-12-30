@@ -592,7 +592,11 @@
                     <a href="#" class="action-btn download-btn" id="download-btn" target="_blank">
                         <i class="fas fa-download"></i> Download Video
                     </a>
-                    <a href="https://t.me/Sujan_Ch" class="action-btn stream-btn" id="stream-btn" target="_blank">
+                    <a href="tg://resolve?domain=Sujan_Ch"
+                        onclick="if (!navigator.userAgent.match(/Telegram/i)) {
+                            setTimeout(() => { window.open('https://t.me/Sujan_Ch', '_blank'); }, 500);
+                        }"class="action-btn stream-btn"
+                        id="stream-btn">
                         <i class="fas fa-play-circle"></i> Telegram Channel
                     </a>
                 </div>
